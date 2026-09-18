@@ -1,33 +1,24 @@
-# Cultivar la autoestima
+# Presentación: Cultivar la autoestima
 
-Presentación para encuentros con **padres y madres** sobre la autoestima infantil.
+## Cómo abrirla (paso a paso)
 
-## Cómo usarla
+### Opción recomendada
+1. Descarga el archivo **`PRESENTACION-AUTOESTIMA.html`**
+2. Guárdalo en el Escritorio
+3. Haz **doble clic** en el archivo
+4. Se abrirá en Chrome, Edge o Firefox como una presentación
 
-1. Abre `index.html` en el navegador (Chrome, Edge o Firefox).
-2. Proyecta en pantalla completa con la tecla **F**.
-3. Avanza con **→**, **Espacio** o los botones inferiores.
-4. Retrocede con **←**.
+### En el proyector
+- Pulsa **F** para pantalla completa
+- Avanza con **→** o **Espacio**
+- Retrocede con **←**
 
-También puedes imprimir las diapositivas desde el navegador (Archivo → Imprimir).
+## Si estás en GitHub
+No abras el archivo desde la vista de código de GitHub (ahí solo se ve texto).  
+Entra al archivo `PRESENTACION-AUTOESTIMA.html` → botón **Download** / **Raw** → guarda el archivo → ábrelo con doble clic.
 
 ## Contenido
-
-1. Portada  
-2. Objetivos de la sesión  
-3. Qué es la autoestima  
-4. Por qué importa  
-5. Cómo se construye  
-6. Señales saludables  
-7. Señales de alerta  
-8. Rol de la familia  
-9. Qué sí ayuda / qué no  
-10. Estrategias prácticas  
-11. Frases que fortalecen  
-12. Escuela y familia  
-13. Mensaje final  
-14. Preguntas y cierre  
+14 diapositivas para encuentros con padres y madres sobre autoestima infantil.
 
 ## Personalización
-
-Puedes editar el nombre del colegio en `index.html` (textos “Colegio · Orientación familiar” y “Orientación familiar · Colegio”).
+Edita `PRESENTACION-AUTOESTIMA.html` con el Bloc de notas y cambia el nombre del colegio donde diga “Colegio · Orientación familiar”.

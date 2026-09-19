@@ -1,8 +1,8 @@
 # Cultivar la autoestima
 
-Presentación para encuentros con **padres y madres** sobre la autoestima infantil.
+Presentación para encuentros con **padres y madres** sobre la autoestima infantil, y tríptico de **Cedric Milles**.
 
-## Cómo usarla
+## Presentación
 
 1. Abre `index.html` en el navegador (Chrome, Edge o Firefox).
 2. Proyecta en pantalla completa con la tecla **F**.
@@ -11,7 +11,16 @@ Presentación para encuentros con **padres y madres** sobre la autoestima infant
 
 También puedes imprimir las diapositivas desde el navegador (Archivo → Imprimir).
 
-## Contenido
+## Tríptico PDF
+
+1. Abre `triptico.html` y pulsa **Descargar PDF**.
+2. El archivo está en `triptico/Cedric-Milles-triptico.pdf`.
+3. Imprime en **A4 horizontal**, a doble cara, **volteando por el lado corto**.
+4. Dobla primero el tercio izquierdo hacia el centro y después la portada encima.
+
+El QR apunta a [cedricmilles.com](https://cedricmilles.com).
+
+## Contenido de la presentación
 
 1. Portada  
 2. Objetivos de la sesión  

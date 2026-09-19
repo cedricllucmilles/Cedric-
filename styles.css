@@ -448,4 +448,15 @@ h3 {
     height: 100vh;
     animation: none;
   }
+
+  .slide:last-child {
+    page-break-after: auto;
+  }
+
+  .slide,
+  .slide * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

@@ -90,6 +90,38 @@ body {
   color: var(--ink-soft);
 }
 
+.chrome-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.chrome-download {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border: 1.5px solid var(--brand);
+  border-radius: 999px;
+  background: rgba(255, 252, 247, 0.7);
+  color: var(--brand-deep);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.chrome-download:hover,
+.chrome-download:focus-visible {
+  background: var(--brand);
+  color: #fff;
+  outline: none;
+}
+
 .deck {
   height: 100vh;
   width: 100vw;

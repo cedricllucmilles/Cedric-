@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tríptico Cedric Milles · PDF</title>
+  <title>Tarjeta Cedric Milles · PDF</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -54,7 +54,7 @@
     }
     .lede {
       margin: 0 0 1.5rem;
-      max-width: 38rem;
+      max-width: 40rem;
       font-size: 1.15rem;
       line-height: 1.55;
       color: var(--ink-soft);
@@ -85,9 +85,11 @@
       background: rgba(255, 252, 247, 0.55);
       color: var(--brand-deep);
     }
-    .previews {
+    .faces {
       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.25rem;
+      margin-bottom: 1.25rem;
     }
     figure {
       margin: 0;
@@ -121,7 +123,7 @@
       color: var(--brand-deep);
       font-size: 1.6rem;
     }
-    .howto ol {
+    .howto ol, .howto ul {
       margin: 0;
       padding-left: 1.2rem;
       color: var(--ink-soft);
@@ -134,33 +136,33 @@
 <body>
   <main>
     <p class="eyebrow">Cedric Milles · Orientación y desarrollo personal</p>
-    <h1>Tríptico para imprimir</h1>
-    <p class="lede">Dos caras en A4 horizontal, con la misma paleta de la presentación: menta, arena y acento naranja. Incluye QR a cedricmilles.com.</p>
+    <h1>Tarjeta de empresa</h1>
+    <p class="lede">Tarjeta de visita 85 × 55 mm, a juego con el tríptico: menta, arena y naranja. Frente con la marca y dorso con QR, WhatsApp y correo para dejar en centros, clubes y empresas.</p>
     <div class="actions">
-      <a class="btn primary" href="triptico/Cedric-Milles-triptico.pdf" download="Cedric-Milles-triptico.pdf">Descargar PDF</a>
-      <a class="btn ghost" href="triptico/print.html">Ver a tamaño real</a>
-      <a class="btn ghost" href="tarjeta.html">Ver la tarjeta</a>
-      <a class="btn ghost" href="index.html">Volver a la presentación</a>
+      <a class="btn primary" href="tarjeta/Cedric-Milles-tarjeta.pdf" download="Cedric-Milles-tarjeta.pdf">Descargar tarjeta (imprenta)</a>
+      <a class="btn ghost" href="tarjeta/Cedric-Milles-tarjeta-hoja-A4.pdf" download="Cedric-Milles-tarjeta-hoja-A4.pdf">Descargar hoja A4 (8 copias)</a>
+      <a class="btn ghost" href="triptico.html">Ver el tríptico</a>
+      <a class="btn ghost" href="index.html">Presentación</a>
     </div>
 
-    <div class="previews">
+    <div class="faces">
       <figure>
-        <img src="triptico/preview-exterior.png" alt="Cara exterior del tríptico: sobre mí, QR de contacto y portada Activa la mente" />
-        <figcaption>Exterior · Solapa · Contraportada con QR · Portada</figcaption>
+        <img src="tarjeta/preview-frente.png" alt="Frente de la tarjeta: Cedric Milles, orientación y desarrollo personal" />
+        <figcaption>Frente · Marca y lema</figcaption>
       </figure>
       <figure>
-        <img src="triptico/preview-interior.png" alt="Cara interior del tríptico: cinco áreas, proceso de trabajo y mensaje para familias" />
-        <figcaption>Interior · Áreas · Proceso · Mensaje para llevar a casa</figcaption>
+        <img src="tarjeta/preview-dorso.png" alt="Dorso de la tarjeta: QR, WhatsApp, correo y web" />
+        <figcaption>Dorso · QR y contacto</figcaption>
       </figure>
     </div>
 
     <section class="howto">
-      <h2>Cómo imprimirlo y plegarlo</h2>
+      <h2>Cómo imprimirla</h2>
       <ol>
-        <li>Abre el PDF e imprime en <strong>A4 horizontal</strong>, a <strong>doble cara</strong>, sin márgenes (o “ajustar al papel”).</li>
-        <li>Si la impresora lo pide, elige <strong>voltear por el lado corto</strong> para que portada e interior coincidan.</li>
-        <li>Deja el papel con el interior hacia arriba (las cinco áreas a la izquierda). Dobla el tercio izquierdo hacia el centro y, después, la portada <em>Activa la mente</em> encima, como una carpeta.</li>
-        <li>Al cerrarlo verás la portada; al girarlo, el QR y los datos de contacto.</li>
+        <li><strong>Imprenta:</strong> envía <em>Cedric-Milles-tarjeta.pdf</em>. Son 2 páginas de 85 × 55 mm (frente y dorso), el tamaño estándar en España.</li>
+        <li><strong>En casa:</strong> imprime la hoja A4 a <strong>doble cara</strong>, A4 vertical, <strong>voltear por el lado largo</strong>, sin márgenes.</li>
+        <li>Recorta por las marcas. Cada hoja saca 8 tarjetas.</li>
+        <li>El QR apunta a <strong>cedricmilles.com</strong>. El teléfono es WhatsApp: <strong>658 406 157</strong>.</li>
       </ol>
     </section>
   </main>

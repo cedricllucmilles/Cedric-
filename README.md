@@ -1,6 +1,6 @@
 # Cultivar la autoestima
 
-Presentación para encuentros con **padres y madres** sobre la autoestima infantil, y tríptico de **Cedric Milles**.
+Presentación para encuentros con **padres y madres** sobre la autoestima infantil, y materiales de **Cedric Milles**.
 
 ## Presentación
 
@@ -19,6 +19,12 @@ También puedes imprimir las diapositivas desde el navegador (Archivo → Imprim
 4. Dobla primero el tercio izquierdo hacia el centro y después la portada encima.
 
 El QR apunta a [cedricmilles.com](https://cedricmilles.com).
+
+## Tarjeta de empresa
+
+1. Abre `tarjeta.html`.
+2. **Imprenta:** `tarjeta/Cedric-Milles-tarjeta.pdf` (85 × 55 mm, frente y dorso).
+3. **En casa:** `tarjeta/Cedric-Milles-tarjeta-hoja-A4.pdf` (8 copias en A4, recortables). Imprime a doble cara, **voltear por el lado largo**.
 
 ## Contenido de la presentación
 

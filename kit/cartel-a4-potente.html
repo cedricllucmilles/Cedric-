@@ -8,313 +8,370 @@
     @page { size: A4 portrait; margin: 0; }
     html, body { width: 210mm; background: #fff; }
 
-    .potente {
+    .break {
       width: 210mm;
       height: 297mm;
       position: relative;
       overflow: hidden;
+      display: grid;
+      grid-template-columns: 11mm 1fr;
+      font-family: var(--font-body);
+      color: #0e1f1c;
+      background: #f7f4ec;
+    }
+
+    .rail {
+      background: #d9772f;
+      position: relative;
+    }
+    .rail span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      white-space: nowrap;
+      font-size: 2.4mm;
+      font-weight: 800;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #fffdf8;
+    }
+
+    .sheet {
       display: flex;
       flex-direction: column;
-      background:
-        radial-gradient(ellipse 90% 50% at 100% 0%, rgba(217, 119, 47, 0.18), transparent 50%),
-        linear-gradient(165deg, #d9efe8 0%, #f3efe4 48%, #efe8d8 100%);
-      font-family: var(--font-body);
-      color: var(--ink);
+      min-width: 0;
     }
-    .potente .hero {
-      background: linear-gradient(145deg, #0a3d37 0%, #0f5c52 55%, #0c4841 100%);
-      color: #fffdf8;
-      padding: 11mm 13mm 12mm;
-      position: relative;
-      overflow: hidden;
+
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 8mm 10mm 0 9mm;
     }
-    .potente .hero::after {
-      content: "";
-      position: absolute;
-      right: -20mm;
-      top: -10mm;
-      width: 90mm;
-      height: 90mm;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(217, 119, 47, 0.35), transparent 65%);
-      pointer-events: none;
-    }
-    .potente .hero-top {
+    .id {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      position: relative;
-      z-index: 1;
+      gap: 3mm;
     }
-    .potente .mark {
-      width: 12mm;
-      height: 12mm;
-      border: 0.35mm solid #fffdf8;
+    .mark {
+      width: 11mm;
+      height: 11mm;
+      border: 0.45mm solid #0a3d37;
       border-radius: 50%;
       display: grid;
       place-items: center;
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 4.6mm;
-      color: #fffdf8;
+      font-size: 4.2mm;
+      color: #0a3d37;
+      background: #fff;
     }
-    .potente .brand {
+    .name {
       margin: 0;
       font-size: 2.3mm;
-      font-weight: 700;
-      letter-spacing: 0.16em;
+      font-weight: 800;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #e8a05a;
+      color: #0a3d37;
     }
-    .potente .hook {
-      margin: 7mm 0 0;
-      position: relative;
-      z-index: 1;
-      font-size: 2.5mm;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: #e8a05a;
+    .role {
+      margin: 0.8mm 0 0;
+      font-size: 2.2mm;
+      font-weight: 600;
+      color: #3d524e;
     }
-    .potente h1 {
-      margin: 3mm 0 4mm;
-      position: relative;
-      z-index: 1;
-      font-family: var(--font-display);
-      font-size: 13.5mm;
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-      font-weight: 700;
-      color: #fffdf8;
-      max-width: 175mm;
-    }
-    .potente .lede {
+    .tag {
       margin: 0;
-      position: relative;
-      z-index: 1;
-      font-size: 3.5mm;
+      padding: 1.6mm 2.8mm;
+      background: #0a3d37;
+      color: #fffdf8;
+      font-size: 2mm;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .who {
+      margin: 5mm 10mm 0 9mm;
+      padding: 3.5mm 4mm;
+      background: #0a3d37;
+      color: #fffdf8;
+      display: grid;
+      grid-template-columns: 22mm 1fr;
+      gap: 3.5mm;
+      align-items: start;
+    }
+    .who .k {
+      margin: 0;
+      font-size: 2mm;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #e8a05a;
+    }
+    .who p {
+      margin: 0;
+      font-size: 2.7mm;
       line-height: 1.4;
       font-weight: 500;
-      color: rgba(255, 253, 248, 0.88);
-      max-width: 170mm;
+      color: rgba(255, 253, 248, 0.92);
+    }
+    .who strong {
+      color: #fffdf8;
+      font-weight: 700;
     }
 
-    .potente .body {
+    .headline {
+      margin: 5mm 10mm 4mm 9mm;
+    }
+    .headline .eyebrow {
+      margin: 0 0 2mm;
+      font-size: 2.3mm;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #d9772f;
+    }
+    .headline h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 11.2mm;
+      line-height: 0.96;
+      letter-spacing: -0.035em;
+      color: #0a3d37;
+      font-weight: 700;
+    }
+    .headline h1 em {
+      font-style: normal;
+      color: #d9772f;
+    }
+
+    .services {
+      list-style: none;
+      margin: 0 10mm 0 9mm;
+      padding: 0;
+      display: grid;
+      gap: 2.2mm;
       flex: 1;
-      padding: 8mm 13mm 0;
+    }
+    .services li {
+      display: grid;
+      grid-template-columns: 58mm 1fr;
+      gap: 0;
+      min-height: 22mm;
+      background: #fff;
+      border: 0.25mm solid rgba(14, 31, 28, 0.12);
+      overflow: hidden;
+    }
+    .services .problem {
+      background: #142826;
+      color: #fffdf8;
+      padding: 3mm 3.2mm;
       display: flex;
       flex-direction: column;
+      justify-content: center;
     }
-    .potente .section {
-      margin: 0 0 2.5mm;
-      font-size: 2.2mm;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .potente .services {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 5mm;
-      display: grid;
-      gap: 2.6mm;
-    }
-    .potente .services li {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 3.2mm 4mm 3.2mm 4.5mm;
-      background: rgba(255, 252, 247, 0.82);
-      border: 0.2mm solid var(--line);
-      border-left: 1.3mm solid var(--accent);
-    }
-    .potente .services .problem {
-      margin: 0 0 0.8mm;
-      font-size: 2.35mm;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .potente .services strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 4mm;
-      color: var(--brand-deep);
-      margin-bottom: 0.6mm;
-      line-height: 1.1;
-    }
-    .potente .services span {
-      display: block;
-      font-size: 2.65mm;
-      line-height: 1.35;
-      color: var(--ink-soft);
-      font-weight: 500;
-    }
-
-    .potente .strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5mm;
-      margin-bottom: 0;
-    }
-    .potente .strip div {
-      padding: 2.8mm 3mm;
-      background: rgba(15, 92, 82, 0.08);
-      border: 0.2mm solid var(--line);
-      text-align: center;
-    }
-    .potente .strip strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 2.9mm;
-      color: var(--brand-deep);
-      margin-bottom: 0.5mm;
-    }
-    .potente .strip span {
-      font-size: 2.2mm;
-      color: var(--ink-soft);
-      font-weight: 500;
-      line-height: 1.25;
-    }
-
-    .potente .foot {
-      margin-top: auto;
-      display: flex;
-      align-items: center;
-      gap: 7mm;
-      padding: 7mm 13mm;
-      background: var(--brand-deep);
-      color: #f3efe4;
-    }
-    .potente .qr {
-      width: 28mm;
-      height: 28mm;
-      padding: 1.8mm;
-      background: #fffdf8;
-      flex-shrink: 0;
-    }
-    .potente .qr img {
-      width: 24.4mm;
-      height: 24.4mm;
-      display: block;
-    }
-    .potente .foot .eyebrow {
+    .services .problem .label {
       margin: 0 0 1mm;
-      font-size: 2.2mm;
-      font-weight: 700;
+      font-size: 1.85mm;
+      font-weight: 800;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #e8a05a;
     }
-    .potente .foot strong {
-      display: block;
-      font-size: 4.2mm;
-      color: #fffdf8;
-      line-height: 1.25;
+    .services .problem p {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: 3.15mm;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
-    .potente .foot p {
-      margin: 1.5mm 0 0;
-      font-size: 2.5mm;
+    .services .help {
+      padding: 3mm 3.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1.2mm solid #d9772f;
+    }
+    .services .help .svc {
+      margin: 0 0 0.8mm;
+      font-size: 2mm;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #0f5c52;
+    }
+    .services .help strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 3.5mm;
+      color: #0a3d37;
+      margin-bottom: 0.7mm;
+      line-height: 1.05;
+    }
+    .services .help span {
+      display: block;
+      font-size: 2.45mm;
+      line-height: 1.35;
+      color: #3d524e;
       font-weight: 500;
-      color: rgba(255, 253, 248, 0.85);
     }
 
-    .potente .plant {
-      position: absolute;
-      right: -8mm;
-      bottom: 42mm;
-      width: 52mm;
-      opacity: 0.18;
-      pointer-events: none;
+    .foot {
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 5mm;
+      align-items: center;
+      padding: 5mm 10mm 6mm 9mm;
+      background: #0a3d37;
+      color: #fffdf8;
+    }
+    .foot .cta-label {
+      margin: 0 0 1mm;
+      font-size: 2mm;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #e8a05a;
+    }
+    .foot h2 {
+      margin: 0 0 1.5mm;
+      font-family: var(--font-display);
+      font-size: 5.2mm;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #fffdf8;
+    }
+    .foot .contacts {
+      margin: 0;
+      font-size: 2.7mm;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #fffdf8;
+    }
+    .foot .contacts span {
+      color: #e8a05a;
+      font-weight: 800;
+    }
+    .qr {
+      width: 26mm;
+      height: 26mm;
+      padding: 1.5mm;
+      background: #fffdf8;
+    }
+    .qr img {
+      width: 23mm;
+      height: 23mm;
+      display: block;
     }
 
     @media screen {
-      body { background: #efe8d8; padding: 10mm 0; }
-      .potente {
+      body { background: #1a1a1a; padding: 12mm 0; }
+      .break {
         margin: 0 auto;
-        box-shadow: 0 8mm 24mm rgba(15, 61, 55, 0.16);
+        box-shadow: 0 10mm 30mm rgba(0, 0, 0, 0.35);
       }
     }
   </style>
 </head>
 <body>
-  <article class="potente" aria-label="Cartel A4 de servicios">
-    <svg class="plant" viewBox="0 0 160 220" fill="none" aria-hidden="true">
-      <path d="M82 210c-2-52 6-96-2-148" stroke="#0a3d37" stroke-width="3" stroke-linecap="round"/>
-      <path d="M80 128c-28-8-48-32-38-58 18 14 32 32 38 52Z" fill="#0f5c52"/>
-      <path d="M80 108c24-18 46-22 54-2-22 8-40 22-54 38Z" fill="#0f5c52"/>
-      <path d="M78 78c-18-22-18-46 4-58 4 24 8 42 10 58Z" fill="#d9772f"/>
-      <circle cx="86" cy="28" r="7" fill="#d9772f"/>
-    </svg>
+  <article class="break" aria-label="Cartel A4 servicios Cedric Milles">
+    <aside class="rail" aria-hidden="true"><span>Cedric Milles · 2026</span></aside>
 
-    <header class="hero">
-      <div class="hero-top">
-        <div class="mark">cm</div>
-        <p class="brand">Cedric Milles</p>
+    <div class="sheet">
+      <header class="top">
+        <div class="id">
+          <div class="mark">cm</div>
+          <div>
+            <p class="name">Cedric Milles</p>
+            <p class="role">Orientación y desarrollo personal</p>
+          </div>
+        </div>
+        <p class="tag">Psicología UdG · Alto rendimiento</p>
+      </header>
+
+      <section class="who">
+        <p class="k">Quién soy</p>
+        <p><strong>Soy Cedric Milles.</strong> Estudié Psicología en la Universitat de Girona y competí en escalada a alto nivel. Hoy acompaño a personas y centros a desbloquear lo que se atasca: estudiar, confiar, competir y convivir con más calma.</p>
+      </section>
+
+      <div class="headline">
+        <p class="eyebrow">Problema → servicio → cómo te ayudo</p>
+        <h1>Lo que se atasca<br />tiene <em>salida.</em></h1>
       </div>
-      <p class="hook">¿Te suena esto en casa o en el cole?</p>
-      <h1>“Estudio, pero no avanzo.” “No sirvo.” “Otra pelea por el móvil.”</h1>
-      <p class="lede">Orientación y desarrollo personal. Charlas y acompañamiento para familias, alumnado, deportistas y centros. Herramientas que se notan al día siguiente.</p>
-    </header>
 
-    <div class="body">
-      <p class="section">Problemas comunes · Cómo te ayudo</p>
       <ul class="services">
         <li>
-          <p class="problem">Cuando dice «no sirvo» o se hunde con un error</p>
-          <strong>Familias · Cultivar la autoestima</strong>
-          <span>Qué sí ayuda y qué no. Frases y gestos para acompañar sin etiquetar ni exigir la perfección.</span>
+          <div class="problem">
+            <p class="label">Problema común</p>
+            <p>“Estudio, pero no avanzo” o se hunde con un error.</p>
+          </div>
+          <div class="help">
+            <p class="svc">Niños y adolescentes</p>
+            <strong>Estudiar mejor · Autonomía</strong>
+            <span>Método propio, organización y criterio. Menos pelea por los deberes. Más “yo puedo” en clase y en casa.</span>
+          </div>
         </li>
         <li>
-          <p class="problem">Cuando los deberes acaban en pelea cada tarde</p>
-          <strong>Niños y adolescentes · Estudiar mejor</strong>
-          <span>Método, organización y autonomía. Menos horas perdidas. Más “yo puedo”.</span>
+          <div class="problem">
+            <p class="label">Problema común</p>
+            <p>No sabes cuándo ayudar y cuándo soltar.</p>
+          </div>
+          <div class="help">
+            <p class="svc">Padres y familias</p>
+            <strong>Acompañar sin sobreproteger</strong>
+            <span>Autoestima, límites y lenguaje. Frases y gestos para casa. El niño se siente visto, no etiquetado.</span>
+          </div>
         </li>
         <li>
-          <p class="problem">Cuando el móvil manda en casa</p>
-          <strong>Familia digital · Límites con calidez</strong>
-          <span>Pantallas, conversación y un mismo criterio entre casa y colegio. Sin alarmismo.</span>
+          <div class="problem">
+            <p class="label">Problema común</p>
+            <p>El móvil manda. En casa todo acaba en pelea.</p>
+          </div>
+          <div class="help">
+            <p class="svc">Familia digital</p>
+            <strong>Pantallas con criterio</strong>
+            <span>Límites con calidez y un mismo mensaje entre casa y colegio. Sin alarmismo: con herramientas.</span>
+          </div>
         </li>
         <li>
-          <p class="problem">Cuando la presión en el deporte o en clase bloquea</p>
-          <strong>Deportistas · Foco y confianza</strong>
-          <span>Preparación mental para competir, gestionar el error y combinar estudios y entrenamiento.</span>
+          <div class="problem">
+            <p class="label">Problema común</p>
+            <p>Entrena bien, pero la presión le bloquea.</p>
+          </div>
+          <div class="help">
+            <p class="svc">Deportistas</p>
+            <strong>Foco y confianza</strong>
+            <span>Preparación mental para competir, gestionar el error y combinar estudios + entrenamiento.</span>
+          </div>
         </li>
         <li>
-          <p class="problem">Cuando el centro quiere un mismo rumbo con las familias</p>
-          <strong>Colegios · Charlas y talleres</strong>
-          <span>Encuentros con AMPA, talleres con alumnado y alineación de claustro. Tú pones fecha; yo llevo la sesión.</span>
+          <div class="problem">
+            <p class="label">Problema común</p>
+            <p>El centro quiere un mismo rumbo con las familias.</p>
+          </div>
+          <div class="help">
+            <p class="svc">Colegios, clubes y empresas</p>
+            <strong>Charlas y talleres</strong>
+            <span>Encuentros con AMPA, talleres con alumnado y alineación de claustro. Tú pones fecha; yo llevo la sesión.</span>
+          </div>
         </li>
       </ul>
 
-      <div class="strip">
+      <footer class="foot">
         <div>
-          <strong>Práctico</strong>
-          <span>Útil el mismo día</span>
+          <p class="cta-label">Empezar es un WhatsApp</p>
+          <h2>Escríbeme. Lo vemos.</h2>
+          <p class="contacts"><span>WhatsApp</span> 658 406 157<br /><span>Web</span> cedricmilles.com · CedricLluc.milles@gmail.com</p>
         </div>
-        <div>
-          <strong>Cercano</strong>
-          <span>Sin jerga innecesaria</span>
+        <div class="qr">
+          <img src="../triptico/assets/qr.svg" alt="QR a cedricmilles.com" />
         </div>
-        <div>
-          <strong>Sin compromiso</strong>
-          <span>Primera conversación gratis</span>
-        </div>
-      </div>
+      </footer>
     </div>
-
-    <footer class="foot">
-      <div class="qr">
-        <img src="../triptico/assets/qr.svg" alt="QR a cedricmilles.com" />
-      </div>
-      <div>
-        <p class="eyebrow">Escríbeme y lo vemos</p>
-        <strong>WhatsApp 658 406 157</strong>
-        <strong>cedricmilles.com</strong>
-        <p>CedricLluc.milles@gmail.com · Psicología UdG</p>
-      </div>
-    </footer>
   </article>
 </body>
 </html>

@@ -78,6 +78,18 @@ p, h1, h2, h3, ul, ol, dl, dt, dd { margin: 0; }
   text-transform: uppercase;
   color: var(--accent);
 }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.6mm 3.2mm;
+  border: 0.32mm solid var(--accent);
+  color: var(--accent);
+  font-size: 2.3mm;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(255, 252, 247, 0.55);
+}
 .display {
   font-family: var(--font-display);
   font-weight: 700;
@@ -154,7 +166,8 @@ p, h1, h2, h3, ul, ol, dl, dt, dd { margin: 0; }
 .poster.a3 .eyebrow { font-size: 3.6mm; }
 .poster.a3 h1 { font-size: 22mm; margin: 5mm 0 6mm; }
 .poster.a3 .lede { font-size: 5.4mm; line-height: 1.4; color: var(--ink-soft); font-weight: 500; max-width: 230mm; }
-.poster.a3 .audience { margin: 8mm 0 10mm; font-size: 4.2mm; font-weight: 700; color: var(--brand); letter-spacing: 0.04em; }
+.poster.a3 .audience { margin: 6mm 0 8mm; font-size: 4mm; font-weight: 700; color: var(--brand); letter-spacing: 0.04em; }
+.poster.a3 .badge { font-size: 2.8mm; padding: 2mm 4mm; }
 .poster.a3 .offers { gap: 6mm; }
 .poster.a3 .offers li { padding: 6mm 7mm; }
 .poster.a3 .offers strong { font-size: 6mm; margin-bottom: 1.6mm; }
@@ -174,7 +187,8 @@ p, h1, h2, h3, ul, ol, dl, dt, dd { margin: 0; }
 .poster.a4 .eyebrow { font-size: 2.6mm; }
 .poster.a4 h1 { font-size: 15.2mm; margin: 3.5mm 0 4mm; }
 .poster.a4 .lede { font-size: 3.9mm; line-height: 1.4; color: var(--ink-soft); font-weight: 500; max-width: 168mm; }
-.poster.a4 .audience { margin: 5.5mm 0 7mm; font-size: 3.1mm; font-weight: 700; color: var(--brand); }
+.poster.a4 .audience { margin: 4.5mm 0 5.5mm; font-size: 3.1mm; font-weight: 700; color: var(--brand); }
+.poster.a4 .badge { font-size: 2.2mm; }
 .poster.a4 .offers { gap: 4mm; }
 .poster.a4 .offers li { padding: 4.2mm 5mm; }
 .poster.a4 .offers strong { font-size: 4.3mm; margin-bottom: 1mm; }
@@ -234,8 +248,8 @@ p, h1, h2, h3, ul, ol, dl, dt, dd { margin: 0; }
 .flyer.front .mark { width: 12mm; height: 12mm; font-size: 4.6mm; }
 .flyer.front .brand { font-size: 2.2mm; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand); }
 .flyer.front .top { display: flex; align-items: center; justify-content: space-between; }
-.flyer.front .eyebrow { font-size: 2.4mm; }
-.flyer.front h1 { font-size: 11.5mm; margin: 4mm 0 5mm; }
+.flyer.front .badge { font-size: 2.1mm; margin-bottom: 0; }
+.flyer.front h1 { font-size: 9.6mm; margin: 4mm 0 5mm; }
 .flyer.front .lede { font-size: 3.5mm; line-height: 1.4; color: var(--ink-soft); font-weight: 500; }
 .flyer.front .cta {
   display: inline-flex;

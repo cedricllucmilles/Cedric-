@@ -10,21 +10,22 @@ Presentación para encuentros con **padres y madres**, y kit de marketing de **C
 
 ## Kit de marketing para colegios
 
-Abre `kit-colegios.html`. Incluye:
+Abre `kit-colegios.html`.
 
 | Pieza | Archivo | Uso |
 |---|---|---|
-| Cartel A3 | `kit/Cedric-Milles-cartel-A3.pdf` | Tablón del hall / sala de profesores |
-| Cartel A4 | `kit/Cedric-Milles-cartel-A4.pdf` | Fotocopiadora del centro |
-| Cartel encuentro | `kit/Cedric-Milles-cartel-encuentro.pdf` | Anunciar la charla de autoestima |
-| Flyer A5 | `kit/Cedric-Milles-flyer-A5.pdf` | Secretaría, AMPA, reuniones |
-| Tríptico colegios | `triptico/Cedric-Milles-triptico-colegios.pdf` | Dejar en dirección |
-| Propuesta A4 | `kit/Cedric-Milles-propuesta-centro.pdf` | Jefatura / orientación / AMPA |
+| **Cartel completo A4 / A3** | `kit/Cedric-Milles-cartel-completo-A4.pdf` | Toda la oferta en un solo cartel |
+| **Charla 1 · Autoestima** | `kit/Cedric-Milles-charla-autoestima.pdf` | Anunciar esa sesión |
+| **Charla 2 · Estudiar mejor** | `kit/Cedric-Milles-charla-estudio.pdf` | Anunciar esa sesión |
+| **Charla 3 · Familia digital** | `kit/Cedric-Milles-charla-pantallas.pdf` | Anunciar esa sesión |
+| **Tríptico tres charlas** | `triptico/Cedric-Milles-triptico-charlas.pdf` | Dejar en dirección |
 | Tarjeta | `tarjeta/Cedric-Milles-tarjeta.pdf` | Dar en mano |
-| Tríptico general | `triptico/Cedric-Milles-triptico.pdf` | Marca personal |
+| Propuesta A4 | `kit/Cedric-Milles-propuesta-centro.pdf` | Jefatura / AMPA |
+| Tríptico de marca | `triptico/Cedric-Milles-triptico.pdf` | Marca personal |
 
-QR y WhatsApp en todas las piezas: [cedricmilles.com](https://cedricmilles.com) · 658 406 157.
+QR y WhatsApp: [cedricmilles.com](https://cedricmilles.com) · 658 406 157.
 
 ## Personalización
 
-Puedes editar el nombre del colegio en `index.html` y la fecha del cartel de encuentro en `kit/cartel-encuentro.html`.
+- Nombre del colegio en `index.html`.
+- Fecha y hora de cada charla en los carteles `kit/cartel-charla-*.html` (campo “A completar por el colegio”).

@@ -201,7 +201,158 @@ p, h1, h2, h3, ul, ol, dl, dt, dd { margin: 0; }
 .poster.a4 .contact strong { font-size: 3.9mm; line-height: 1.25; }
 .poster.a4 .contact p { font-size: 2.6mm; margin-top: 1.4mm; font-weight: 500; }
 
-/* Encuentro variant */
+/* Complete one-sheet poster */
+.poster.completo.a4 h1 { font-size: 12.2mm; margin: 2.5mm 0 2.5mm; }
+.poster.completo.a4 .lede { font-size: 3.2mm; margin-bottom: 3.5mm; max-width: 175mm; }
+.poster.completo.a4 .section-label {
+  font-size: 2.15mm;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 2.2mm;
+}
+.poster.completo .talks {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 2.8mm;
+  margin: 0 0 3.5mm;
+}
+.poster.completo .talks li {
+  display: grid;
+  grid-template-columns: 7mm 1fr;
+  gap: 2.5mm;
+  padding: 3mm 3.5mm;
+  background: var(--panel);
+  border: 0.2mm solid var(--line);
+}
+.poster.completo .talks .n {
+  width: 6.2mm;
+  height: 6.2mm;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fffdf8;
+  display: grid;
+  place-items: center;
+  font-size: 2.4mm;
+  font-weight: 700;
+  margin-top: 0.4mm;
+}
+.poster.completo .talks strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.6mm;
+  color: var(--brand-deep);
+  margin-bottom: 0.5mm;
+}
+.poster.completo .talks span {
+  display: block;
+  font-size: 2.55mm;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.poster.completo .meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3mm;
+  margin-bottom: 0;
+}
+.poster.completo .meta article {
+  padding: 3mm 3.5mm;
+  background: var(--panel);
+  border: 0.2mm solid var(--line);
+  border-top: 1mm solid var(--accent);
+}
+.poster.completo .meta strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.2mm;
+  color: var(--brand);
+  margin-bottom: 1.2mm;
+}
+.poster.completo .meta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.poster.completo .meta li {
+  font-size: 2.45mm;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  font-weight: 500;
+  padding: 0.7mm 0 0.7mm 3.2mm;
+  position: relative;
+}
+.poster.completo .meta li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.5mm;
+  width: 1.5mm;
+  height: 1.5mm;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.poster.completo.a4 .plant { bottom: 38mm; opacity: 0.16; width: 48mm; }
+.poster.completo.a4 .foot { margin-top: 6mm; }
+
+.poster.completo.a3 h1 { font-size: 18mm; margin: 4mm 0 4mm; }
+.poster.completo.a3 .lede { font-size: 4.4mm; margin-bottom: 5mm; }
+.poster.completo.a3 .section-label { font-size: 3mm; margin-bottom: 3mm; }
+.poster.completo.a3 .talks { gap: 4mm; margin-bottom: 5mm; }
+.poster.completo.a3 .talks li { padding: 4.5mm 5mm; grid-template-columns: 9mm 1fr; gap: 3.5mm; }
+.poster.completo.a3 .talks .n { width: 8mm; height: 8mm; font-size: 3.2mm; }
+.poster.completo.a3 .talks strong { font-size: 5.2mm; }
+.poster.completo.a3 .talks span { font-size: 3.5mm; }
+.poster.completo.a3 .meta { gap: 4.5mm; }
+.poster.completo.a3 .meta article { padding: 4.5mm 5mm; }
+.poster.completo.a3 .meta strong { font-size: 4.6mm; }
+.poster.completo.a3 .meta li { font-size: 3.4mm; padding-left: 4mm; }
+.poster.completo.a3 .plant { bottom: 48mm; width: 70mm; opacity: 0.16; }
+
+/* Talk poster (one charla) */
+.poster.talk .points {
+  list-style: none;
+  padding: 0;
+  margin: 4mm 0 0;
+}
+.poster.talk .points li {
+  font-family: var(--font-display);
+  font-size: 3.8mm;
+  color: var(--brand-deep);
+  padding: 2.6mm 0 2.6mm 4mm;
+  border-bottom: 0.2mm solid var(--line);
+  position: relative;
+}
+.poster.talk .points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4.2mm;
+  width: 1.8mm;
+  height: 1.8mm;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.poster.talk .gain {
+  margin-top: 4mm;
+  padding: 3.5mm 4mm;
+  background: var(--accent-soft);
+  border-left: 1mm solid var(--accent);
+  font-size: 2.7mm;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--ink);
+}
+.poster.talk .gain strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.3mm;
+  color: var(--brand-deep);
+  margin-bottom: 0.8mm;
+}
 .poster.event .date-box {
   display: grid;
   grid-template-columns: 1fr 1fr;

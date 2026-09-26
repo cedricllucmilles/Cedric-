@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: block;
+  src: url("../triptico/fonts/fraunces-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: block;
+  src: url("../triptico/fonts/fraunces-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: block;
+  src: url("../triptico/fonts/manrope-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: block;
+  src: url("../triptico/fonts/manrope-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --bg-1: #d9efe8;
+  --bg-2: #f3efe4;
+  --paper: #fffdf8;
+  --ink: #142826;
+  --ink-soft: #3d524e;
+  --brand: #0f5c52;
+  --brand-deep: #0a3d37;
+  --accent: #d9772f;
+  --line: rgba(20, 40, 38, 0.12);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.card {
+  position: relative;
+  width: 85mm;
+  height: 55mm;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 5mm 5.2mm 4.6mm;
+}
+
+.card p, .card h1, .card dl, .card dt, .card dd {
+  margin: 0;
+}
+
+.mark {
+  width: 8.2mm;
+  height: 8.2mm;
+  border: 0.32mm solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 3.1mm;
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  font-size: 1.85mm;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ---- FRONT ---- */
+.card.front {
+  background:
+    radial-gradient(ellipse 90% 70% at 8% 0%, rgba(15, 92, 82, 0.26), transparent 55%),
+    radial-gradient(ellipse 70% 60% at 110% 10%, rgba(217, 119, 47, 0.2), transparent 52%),
+    linear-gradient(165deg, var(--bg-1) 0%, var(--bg-2) 62%, #efe8d8 100%);
+  color: var(--brand-deep);
+  justify-content: space-between;
+}
+
+.card.front .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card.front .brand {
+  font-size: 1.85mm;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.card.front h1 {
+  font-family: var(--font-display);
+  font-size: 6.1mm;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin: 1.2mm 0 1.4mm;
+}
+
+.card.front .tagline {
+  font-family: var(--font-display);
+  font-size: 3.35mm;
+  line-height: 1.15;
+  font-weight: 500;
+  color: var(--brand-deep);
+  max-width: 58mm;
+}
+
+.card.front .web {
+  font-size: 2.15mm;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+}
+
+.plant {
+  position: absolute;
+  right: -3mm;
+  bottom: -3mm;
+  width: 28mm;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+/* ---- BACK ---- */
+.card.back {
+  background:
+    radial-gradient(ellipse 80% 60% at 90% 0%, rgba(217, 119, 47, 0.2), transparent 50%),
+    linear-gradient(180deg, #0c4841 0%, var(--brand-deep) 100%);
+  color: #f3efe4;
+  padding: 4.4mm 4.6mm;
+  flex-direction: row;
+  align-items: center;
+  gap: 4mm;
+}
+
+.qr-box {
+  flex: 0 0 24mm;
+  width: 24mm;
+  height: 24mm;
+  padding: 1.4mm;
+  background: #fffdf8;
+  display: grid;
+  place-items: center;
+}
+
+.qr-box img {
+  width: 21.2mm;
+  height: 21.2mm;
+  display: block;
+}
+
+.card.back .info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1mm;
+}
+
+.card.back .eyebrow {
+  color: #e8a05a;
+  margin-bottom: 0.35mm;
+}
+
+.card.back dd {
+  font-size: 2.45mm;
+  font-weight: 700;
+  color: #fffdf8;
+  line-height: 1.15;
+  word-break: break-word;
+}
+
+.card.back .hint {
+  margin-top: 0.4mm;
+  font-family: var(--font-display);
+  font-size: 2.15mm;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #f3efe4;
+}

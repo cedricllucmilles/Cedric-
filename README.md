@@ -1,33 +1,32 @@
 # Cultivar la autoestima
 
-Presentación para encuentros con **padres y madres** sobre la autoestima infantil.
+Presentación para encuentros con **padres y madres**, y kit de marketing de **Cedric Milles** para colegios.
 
-## Cómo usarla
+## Presentación
 
 1. Abre `index.html` en el navegador (Chrome, Edge o Firefox).
 2. Proyecta en pantalla completa con la tecla **F**.
 3. Avanza con **→**, **Espacio** o los botones inferiores.
-4. Retrocede con **←**.
 
-También puedes imprimir las diapositivas desde el navegador (Archivo → Imprimir).
+## Kit de marketing para colegios
 
-## Contenido
+Abre `kit-colegios.html`.
 
-1. Portada  
-2. Objetivos de la sesión  
-3. Qué es la autoestima  
-4. Por qué importa  
-5. Cómo se construye  
-6. Señales saludables  
-7. Señales de alerta  
-8. Rol de la familia  
-9. Qué sí ayuda / qué no  
-10. Estrategias prácticas  
-11. Frases que fortalecen  
-12. Escuela y familia  
-13. Mensaje final  
-14. Preguntas y cierre  
+| Pieza | Archivo | Uso |
+|---|---|---|
+| **Cartel A4 potente** | `kit/Cedric-Milles-cartel-A4-potente.pdf` | Problemas reales + servicios (el principal) |
+| Cartel completo A4 / A3 | `kit/Cedric-Milles-cartel-completo-A4.pdf` | Tres charlas numeradas |
+| **Charla 1 · Autoestima** | `kit/Cedric-Milles-charla-autoestima.pdf` | Anunciar esa sesión |
+| **Charla 2 · Estudiar mejor** | `kit/Cedric-Milles-charla-estudio.pdf` | Anunciar esa sesión |
+| **Charla 3 · Familia digital** | `kit/Cedric-Milles-charla-pantallas.pdf` | Anunciar esa sesión |
+| **Tríptico tres charlas** | `triptico/Cedric-Milles-triptico-charlas.pdf` | Dejar en dirección |
+| Tarjeta | `tarjeta/Cedric-Milles-tarjeta.pdf` | Dar en mano |
+| Propuesta A4 | `kit/Cedric-Milles-propuesta-centro.pdf` | Jefatura / AMPA |
+| Tríptico de marca | `triptico/Cedric-Milles-triptico.pdf` | Marca personal |
+
+QR y WhatsApp: [cedricmilles.com](https://cedricmilles.com) · 658 406 157.
 
 ## Personalización
 
-Puedes editar el nombre del colegio en `index.html` (textos “Colegio · Orientación familiar” y “Orientación familiar · Colegio”).
+- Nombre del colegio en `index.html`.
+- Fecha y hora de cada charla en los carteles `kit/cartel-charla-*.html` (campo “A completar por el colegio”).

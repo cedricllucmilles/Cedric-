@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarjeta · Cedric Milles</title>
+  <link rel="stylesheet" href="card.css" />
+  <style>
+    @page {
+      size: 85mm 55mm;
+      margin: 0;
+    }
+
+    html, body {
+      width: 85mm;
+      background: #fff;
+    }
+
+    .page {
+      width: 85mm;
+      height: 55mm;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    @media screen {
+      body {
+        background: #efe8d8;
+        padding: 12mm 0;
+      }
+      .page {
+        margin: 0 auto 10mm;
+        box-shadow: 0 6mm 18mm rgba(15, 61, 55, 0.18);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page" aria-label="Frente de la tarjeta">
+    <article class="card front">
+      <svg class="plant" viewBox="0 0 160 220" fill="none" aria-hidden="true">
+        <path d="M82 210c-2-52 6-96-2-148" stroke="#0a3d37" stroke-width="3" stroke-linecap="round"/>
+        <path d="M80 128c-28-8-48-32-38-58 18 14 32 32 38 52Z" fill="#0f5c52"/>
+        <path d="M80 108c24-18 46-22 54-2-22 8-40 22-54 38Z" fill="#0f5c52"/>
+        <path d="M78 78c-18-22-18-46 4-58 4 24 8 42 10 58Z" fill="#d9772f"/>
+        <circle cx="86" cy="28" r="7" fill="#d9772f"/>
+      </svg>
+      <div class="top">
+        <div class="mark">cm</div>
+        <p class="brand">Cedric Milles</p>
+      </div>
+      <div>
+        <p class="eyebrow">Orientación y desarrollo personal</p>
+        <h1>Cedric Milles</h1>
+        <p class="tagline">Activa la mente.<br />Da el paso.</p>
+      </div>
+      <p class="web">cedricmilles.com</p>
+    </article>
+  </section>
+
+  <section class="page" aria-label="Dorso de la tarjeta">
+    <article class="card back">
+      <div class="qr-box">
+        <img src="assets/qr-web.svg" alt="Código QR a cedricmilles.com" width="330" height="330" />
+      </div>
+      <div class="info">
+        <div>
+          <p class="eyebrow">WhatsApp</p>
+          <p style="margin:0;font-size:2.7mm;font-weight:700;color:#fffdf8;">658 406 157</p>
+        </div>
+        <div>
+          <p class="eyebrow">Correo</p>
+          <p style="margin:0;font-size:2.15mm;font-weight:700;color:#fffdf8;">CedricLluc.milles@gmail.com</p>
+        </div>
+        <div>
+          <p class="eyebrow">Web</p>
+          <p style="margin:0;font-size:2.45mm;font-weight:700;color:#fffdf8;">cedricmilles.com</p>
+        </div>
+        <p class="hint">Escanea y conoce más.</p>
+      </div>
+    </article>
+  </section>
+</body>
+</html>

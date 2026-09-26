@@ -14,7 +14,8 @@ Abre `kit-colegios.html`.
 
 | Pieza | Archivo | Uso |
 |---|---|---|
-| **Cartel completo A4 / A3** | `kit/Cedric-Milles-cartel-completo-A4.pdf` | Toda la oferta en un solo cartel |
+| **Cartel A4 potente** | `kit/Cedric-Milles-cartel-A4-potente.pdf` | Problemas reales + servicios (el principal) |
+| Cartel completo A4 / A3 | `kit/Cedric-Milles-cartel-completo-A4.pdf` | Tres charlas numeradas |
 | **Charla 1 · Autoestima** | `kit/Cedric-Milles-charla-autoestima.pdf` | Anunciar esa sesión |
 | **Charla 2 · Estudiar mejor** | `kit/Cedric-Milles-charla-estudio.pdf` | Anunciar esa sesión |
 | **Charla 3 · Familia digital** | `kit/Cedric-Milles-charla-pantallas.pdf` | Anunciar esa sesión |

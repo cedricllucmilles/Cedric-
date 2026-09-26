@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hoja A4 · Tarjetas Cedric Milles</title>
+  <link rel="stylesheet" href="card.css" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    html, body {
+      width: 210mm;
+      background: #fff;
+    }
+
+    .sheet {
+      width: 210mm;
+      height: 297mm;
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+      padding: 26mm 16mm;
+    }
+
+    .sheet:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    .grid {
+      width: 178mm;
+      height: 244mm;
+      display: grid;
+      grid-template-columns: 85mm 85mm;
+      grid-template-rows: repeat(4, 55mm);
+      column-gap: 8mm;
+      row-gap: 8mm;
+    }
+
+    .backs .grid {
+      direction: rtl;
+    }
+
+    .backs .card {
+      direction: ltr;
+    }
+
+    .slot {
+      position: relative;
+      width: 85mm;
+      height: 55mm;
+    }
+
+    .crop {
+      position: absolute;
+      inset: -3.2mm;
+      pointer-events: none;
+      background:
+        linear-gradient(#5a6b67, #5a6b67) left 0 top 3.2mm / 2.4mm 0.18mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) left 3.2mm top 0 / 0.18mm 2.4mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) right 0 top 3.2mm / 2.4mm 0.18mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) right 3.2mm top 0 / 0.18mm 2.4mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) left 0 bottom 3.2mm / 2.4mm 0.18mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) left 3.2mm bottom 0 / 0.18mm 2.4mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) right 0 bottom 3.2mm / 2.4mm 0.18mm no-repeat,
+        linear-gradient(#5a6b67, #5a6b67) right 3.2mm bottom 0 / 0.18mm 2.4mm no-repeat;
+    }
+
+    .guide {
+      position: absolute;
+      left: 16mm;
+      right: 16mm;
+      top: 12mm;
+      font-size: 2.4mm;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #3d524e;
+      text-align: center;
+    }
+
+    @media screen {
+      body {
+        background: #efe8d8;
+        padding: 10mm 0;
+      }
+      .sheet {
+        margin: 0 auto 10mm;
+        box-shadow: 0 8mm 22mm rgba(15, 61, 55, 0.16);
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <template id="front-card">
+    <div class="slot">
+      <span class="crop" aria-hidden="true"></span>
+      <article class="card front">
+        <svg class="plant" viewBox="0 0 160 220" fill="none" aria-hidden="true">
+          <path d="M82 210c-2-52 6-96-2-148" stroke="#0a3d37" stroke-width="3" stroke-linecap="round"/>
+          <path d="M80 128c-28-8-48-32-38-58 18 14 32 32 38 52Z" fill="#0f5c52"/>
+          <path d="M80 108c24-18 46-22 54-2-22 8-40 22-54 38Z" fill="#0f5c52"/>
+          <path d="M78 78c-18-22-18-46 4-58 4 24 8 42 10 58Z" fill="#d9772f"/>
+          <circle cx="86" cy="28" r="7" fill="#d9772f"/>
+        </svg>
+        <div class="top">
+          <div class="mark">cm</div>
+          <p class="brand">Cedric Milles</p>
+        </div>
+        <div>
+          <p class="eyebrow">Orientación y desarrollo personal</p>
+          <h1>Cedric Milles</h1>
+          <p class="tagline">Activa la mente.<br />Da el paso.</p>
+        </div>
+        <p class="web">cedricmilles.com</p>
+      </article>
+    </div>
+  </template>
+
+  <template id="back-card">
+    <div class="slot">
+      <span class="crop" aria-hidden="true"></span>
+      <article class="card back">
+        <div class="qr-box">
+          <img src="assets/qr-web.svg" alt="Código QR a cedricmilles.com" width="330" height="330" />
+        </div>
+        <div class="info">
+          <div>
+            <p class="eyebrow">WhatsApp</p>
+            <p style="margin:0;font-size:2.7mm;font-weight:700;color:#fffdf8;">658 406 157</p>
+          </div>
+          <div>
+            <p class="eyebrow">Correo</p>
+            <p style="margin:0;font-size:2.15mm;font-weight:700;color:#fffdf8;">CedricLluc.milles@gmail.com</p>
+          </div>
+          <div>
+            <p class="eyebrow">Web</p>
+            <p style="margin:0;font-size:2.45mm;font-weight:700;color:#fffdf8;">cedricmilles.com</p>
+          </div>
+          <p class="hint">Escanea y conoce más.</p>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <section class="sheet fronts" aria-label="Frentes — 8 tarjetas">
+    <p class="guide">Frente · Recorta por las marcas · 85 × 55 mm</p>
+    <div class="grid" id="fronts"></div>
+  </section>
+
+  <section class="sheet backs" aria-label="Dorsos — 8 tarjetas">
+    <p class="guide">Dorso · Imprime a doble cara, voltear por el lado largo</p>
+    <div class="grid" id="backs"></div>
+  </section>
+
+  <script>
+    const fronts = document.getElementById("fronts");
+    const backs = document.getElementById("backs");
+    const frontTpl = document.getElementById("front-card");
+    const backTpl = document.getElementById("back-card");
+    for (let i = 0; i < 8; i += 1) {
+      fronts.appendChild(frontTpl.content.cloneNode(true));
+      backs.appendChild(backTpl.content.cloneNode(true));
+    }
+  </script>
+</body>
+</html>

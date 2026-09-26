@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cartel encuentro familias · Cedric Milles</title>
+  <link rel="stylesheet" href="brand.css" />
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+    html, body { width: 210mm; background: #fff; }
+    .quotes {
+      list-style: none;
+      padding: 0;
+      margin: 5mm 0 0;
+    }
+    .quotes li {
+      font-family: var(--font-display);
+      font-size: 4mm;
+      color: var(--brand-deep);
+      padding: 2.8mm 0 2.8mm 4mm;
+      border-bottom: 0.2mm solid var(--line);
+      position: relative;
+    }
+    .quotes li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4.4mm;
+      width: 1.8mm;
+      height: 1.8mm;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <article class="poster a4 event">
+    <svg class="plant" viewBox="0 0 160 220" fill="none" aria-hidden="true">
+      <path d="M82 210c-2-52 6-96-2-148" stroke="#0a3d37" stroke-width="3" stroke-linecap="round"/>
+      <path d="M80 128c-28-8-48-32-38-58 18 14 32 32 38 52Z" fill="#0f5c52"/>
+      <path d="M80 108c24-18 46-22 54-2-22 8-40 22-54 38Z" fill="#0f5c52"/>
+      <path d="M78 78c-18-22-18-46 4-58 4 24 8 42 10 58Z" fill="#d9772f"/>
+      <circle cx="86" cy="28" r="7" fill="#d9772f"/>
+    </svg>
+    <div>
+      <div class="top">
+        <div class="mark">cm</div>
+        <p class="brand">Cedric Milles</p>
+      </div>
+      <p class="eyebrow" style="margin-top: 9mm;">Encuentro con familias</p>
+      <h1 class="display">Cultivar la<br />autoestima</h1>
+      <p class="lede">Una conversación para acompañar el crecimiento emocional de nuestros hijos e hijas. Herramientas concretas para casa y para el colegio.</p>
+      <ul class="quotes">
+        <li>Qué es la autoestima y cómo se construye cada día.</li>
+        <li>Qué sí ayuda… y qué no: esfuerzo, error y lenguaje.</li>
+        <li>Escuela y familia, de la mano, con el mismo rumbo.</li>
+      </ul>
+      <div class="date-box">
+        <div>
+          <p class="label">Centro · Fecha · Hora</p>
+          <p class="blank">A completar por el colegio</p>
+        </div>
+        <div>
+          <p class="label">Para</p>
+          <p class="blank">Padres, madres y tutores</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="qr">
+        <img src="../triptico/assets/qr.svg" alt="QR a cedricmilles.com" />
+      </div>
+      <div class="contact">
+        <p class="eyebrow">Organiza tu centro · Impulsa Cedric Milles</p>
+        <strong>WhatsApp 658 406 157</strong>
+        <strong>cedricmilles.com</strong>
+        <p>La autoestima se cultiva con presencia, paciencia y confianza.</p>
+      </div>
+    </div>
+  </article>
+</body>
+</html>

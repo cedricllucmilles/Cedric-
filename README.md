@@ -1,48 +1,30 @@
 # Cultivar la autoestima
 
-Presentación para encuentros con **padres y madres** sobre la autoestima infantil, y materiales de **Cedric Milles**.
+Presentación para encuentros con **padres y madres**, y kit de marketing de **Cedric Milles** para colegios.
 
 ## Presentación
 
 1. Abre `index.html` en el navegador (Chrome, Edge o Firefox).
 2. Proyecta en pantalla completa con la tecla **F**.
 3. Avanza con **→**, **Espacio** o los botones inferiores.
-4. Retrocede con **←**.
 
-También puedes imprimir las diapositivas desde el navegador (Archivo → Imprimir).
+## Kit de marketing para colegios
 
-## Tríptico PDF
+Abre `kit-colegios.html`. Incluye:
 
-1. Abre `triptico.html` y pulsa **Descargar PDF**.
-2. El archivo está en `triptico/Cedric-Milles-triptico.pdf`.
-3. Imprime en **A4 horizontal**, a doble cara, **volteando por el lado corto**.
-4. Dobla primero el tercio izquierdo hacia el centro y después la portada encima.
+| Pieza | Archivo | Uso |
+|---|---|---|
+| Cartel A3 | `kit/Cedric-Milles-cartel-A3.pdf` | Tablón del hall / sala de profesores |
+| Cartel A4 | `kit/Cedric-Milles-cartel-A4.pdf` | Fotocopiadora del centro |
+| Cartel encuentro | `kit/Cedric-Milles-cartel-encuentro.pdf` | Anunciar la charla de autoestima |
+| Flyer A5 | `kit/Cedric-Milles-flyer-A5.pdf` | Secretaría, AMPA, reuniones |
+| Tríptico colegios | `triptico/Cedric-Milles-triptico-colegios.pdf` | Dejar en dirección |
+| Propuesta A4 | `kit/Cedric-Milles-propuesta-centro.pdf` | Jefatura / orientación / AMPA |
+| Tarjeta | `tarjeta/Cedric-Milles-tarjeta.pdf` | Dar en mano |
+| Tríptico general | `triptico/Cedric-Milles-triptico.pdf` | Marca personal |
 
-El QR apunta a [cedricmilles.com](https://cedricmilles.com).
-
-## Tarjeta de empresa
-
-1. Abre `tarjeta.html`.
-2. **Imprenta:** `tarjeta/Cedric-Milles-tarjeta.pdf` (85 × 55 mm, frente y dorso).
-3. **En casa:** `tarjeta/Cedric-Milles-tarjeta-hoja-A4.pdf` (8 copias en A4, recortables). Imprime a doble cara, **voltear por el lado largo**.
-
-## Contenido de la presentación
-
-1. Portada  
-2. Objetivos de la sesión  
-3. Qué es la autoestima  
-4. Por qué importa  
-5. Cómo se construye  
-6. Señales saludables  
-7. Señales de alerta  
-8. Rol de la familia  
-9. Qué sí ayuda / qué no  
-10. Estrategias prácticas  
-11. Frases que fortalecen  
-12. Escuela y familia  
-13. Mensaje final  
-14. Preguntas y cierre  
+QR y WhatsApp en todas las piezas: [cedricmilles.com](https://cedricmilles.com) · 658 406 157.
 
 ## Personalización
 
-Puedes editar el nombre del colegio en `index.html` (textos “Colegio · Orientación familiar” y “Orientación familiar · Colegio”).
+Puedes editar el nombre del colegio en `index.html` y la fecha del cartel de encuentro en `kit/cartel-encuentro.html`.

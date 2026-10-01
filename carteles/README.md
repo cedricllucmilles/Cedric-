@@ -9,6 +9,8 @@ Carteles publicitarios alineados con `Material Corporativo` (concepto de brújul
 | `cartel-institucional-cedric-milles.png` | Corporativo / editorial | Psicología para comprender · Orientación para decidir · Rendimiento para avanzar |
 | `cartel-bienestar-cedric-milles.png` | Bienestar y crecimiento | No necesitas tenerlo todo claro para empezar a avanzar |
 | `cartel-claridad-cedric-milles.png` | Ansiedad, estrés y sobrecarga | Baja el ruido. Recupera perspectiva |
+| `cartel-escolar-familias-ninos.png` | Colegios · familias | Crecéis juntos: comprender, decidir y avanzar |
+| `cartel-escolar-ninos.png` | Colegios · infancia | No hace falta tenerlo todo claro para empezar a avanzar |
 
 ## Especificaciones
 

@@ -26,6 +26,11 @@ Carteles publicitarios alineados con `Material Corporativo` (concepto de brújul
 ```bash
 python3 carteles/generar_carteles.py
 python3 carteles/generar_cartel_colegios_qr.py
+python3 carteles/generar_cartel_orientacion_familias.py
 ```
 
 Requisito QR: `pip install qrcode[pil]`
+
+Fotografías del cartel cream/foto: `assets/foto-colegios-original-cedric.jpg` y
+`assets/foto-familias-original-cedric.jpg` (generadas para el proyecto, no recortes
+de la referencia externa).

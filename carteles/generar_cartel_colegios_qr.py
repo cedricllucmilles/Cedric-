@@ -48,9 +48,8 @@ def main() -> None:
     qr_img.save(ASSETS / "qr-cedric-servicios.png")
 
     icon = Image.open(ASSETS / "isotipo.png").convert("RGBA")
-    photo_path = ASSETS / "foto-extraida-larga.png"
-    photo_src = Image.open(photo_path).convert("RGB")
-    photo = photo_src.crop((0, 240, photo_src.width, photo_src.height))
+    photo_path = ASSETS / "foto-colegios-original-cedric.jpg"
+    photo = Image.open(photo_path).convert("RGB")
 
     img = Image.new("RGB", (W, H), CREAM)
     draw = ImageDraw.Draw(img)

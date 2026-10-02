@@ -11,7 +11,9 @@ Carteles publicitarios alineados con `Material Corporativo` (concepto de brújul
 | `cartel-claridad-cedric-milles.png` | Ansiedad, estrés y sobrecarga | Baja el ruido. Recupera perspectiva |
 | `cartel-escolar-familias-ninos.png` | Colegios · familias | Crecéis juntos: comprender, decidir y avanzar |
 | `cartel-escolar-ninos.png` | Colegios · infancia | No hace falta tenerlo todo claro para empezar a avanzar |
-| `cartel-colegios-servicios-qr.png` | Colegios · QR | En el colegio también se aprende a entenderse (+ QR servicios) |
+| `cartel-colegios-mapa-qr.png` | Colegios · ilustrado | Mapa/brújula + QR servicios (recomendado) |
+| `cartel-colegios-paneles-qr.png` | Colegios · paneles | Tres columnas niños/familias + QR |
+| `cartel-colegios-servicios-qr.png` | (legacy) | Plantilla tipo foto+cream — sustituida por mapa/paneles |
 | `cartel-orientacion-familias.png` | Familias · foto | Crecer también es aprender a entenderse |
 
 ## Especificaciones
@@ -27,6 +29,7 @@ Carteles publicitarios alineados con `Material Corporativo` (concepto de brújul
 python3 carteles/generar_carteles.py
 python3 carteles/generar_cartel_colegios_qr.py
 python3 carteles/generar_cartel_orientacion_familias.py
+python3 carteles/generar_cartel_colegios_visual.py
 ```
 
 Requisito QR: `pip install qrcode[pil]`
